@@ -64,56 +64,6 @@ I developed a deep learning model using TensorFlow and Keras to classify videos 
 
 ---
 
-
-
-Model: "sequential"
-_________________________________________________________________
- Layer (type)                Output Shape              Param #   
-=================================================================
- conv_lstm2d (ConvLSTM2D)    (None, 20, 62, 62, 4)     1024      
-                                                                 
- max_pooling3d (MaxPooling3  (None, 20, 31, 31, 4)     0         
- D)                                                              
-                                                                 
- time_distributed (TimeDist  (None, 20, 31, 31, 4)     0         
- ributed)                                                        
-                                                                 
- conv_lstm2d_1 (ConvLSTM2D)  (None, 20, 29, 29, 8)     3488      
-                                                                 
- max_pooling3d_1 (MaxPoolin  (None, 20, 15, 15, 8)     0         
- g3D)                                                            
-                                                                 
- time_distributed_1 (TimeDi  (None, 20, 15, 15, 8)     0         
- stributed)                                                      
-                                                                 
- conv_lstm2d_2 (ConvLSTM2D)  (None, 20, 13, 13, 14)    11144     
-                                                                 
- max_pooling3d_2 (MaxPoolin  (None, 20, 7, 7, 14)      0         
- g3D)                                                            
-                                                                 
- time_distributed_2 (TimeDi  (None, 20, 7, 7, 14)      0         
- stributed)                                                      
-                                                                 
- conv_lstm2d_3 (ConvLSTM2D)  (None, 20, 5, 5, 16)      17344     
-                                                                 
- max_pooling3d_3 (MaxPoolin  (None, 20, 3, 3, 16)      0         
- g3D)                                                            
-                                                                 
- flatten (Flatten)           (None, 2880)              0         
-                                                                 
- dense (Dense)               (None, 50)                144050    
-                                                                 
-=================================================================
-Total params: 177050 (691.60 KB)
-Trainable params: 177050 (691.60 KB)
-Non-trainable params: 0 (0.00 Byte)
-_________________________________________________________________
-Model Created Successfully!
-
-
-
----
-
 ## Techniques Used:
 
 Video Frame Extraction: You've written a function frames_extraction to extract frames from video files using OpenCV.
