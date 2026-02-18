@@ -66,11 +66,11 @@ I developed a deep learning model using TensorFlow and Keras to classify videos 
 
 ## Techniques Used:
 
-Video Frame Extraction: You've written a function frames_extraction to extract frames from video files using OpenCV.
-Data Preprocessing: You've resized the frames to a fixed height and width, normalized the pixel values to be between 0 and 1, and stored the preprocessed frames in a list.
-Dataset Creation: You've created a custom dataset by iterating through a directory containing video files organized by class, extracting frames from each video, and storing the frames, labels, and video file paths in separate lists.
-ConvLSTM Model Architecture: You've designed a ConvLSTM model with multiple layers, including ConvLSTM2D, MaxPooling3D, TimeDistributed, and Dense layers. The model takes a sequence of frames as input and outputs a class label.
-Model Compilation: You've compiled the model with a suitable optimizer and loss function.
+Video Frame Extraction: I written a function frames_extraction to extract frames from video files using OpenCV.
+Data Preprocessing: I resized the frames to a fixed height and width, normalized the pixel values to be between 0 and 1, and stored the preprocessed frames in a list.
+Dataset Creation: I created a custom dataset by iterating through a directory containing video files organized by class, extracting frames from each video, and storing the frames, labels, and video file paths in separate lists.
+ConvLSTM Model Architecture: I designed a ConvLSTM model with multiple layers, including ConvLSTM2D, MaxPooling3D, TimeDistributed, and Dense layers. The model takes a sequence of frames as input and outputs a class label.
+Model Compilation: I compiled the model with a suitable optimizer and loss function.
 ## Workflow Diagram:
                                       +---------------+
                                       |  Video Files  |
